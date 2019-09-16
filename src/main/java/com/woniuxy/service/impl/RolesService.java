@@ -19,7 +19,7 @@ public class RolesService implements IRolesService {
 
 	@Override
 	public void delete(Integer rolesid) {
-		rolesMapper.deleteByPrimaryKey(rolesid);
+		rolesMapper.deleteByPrimaryKey(rolesid);    
 	}
 
 	@Override
