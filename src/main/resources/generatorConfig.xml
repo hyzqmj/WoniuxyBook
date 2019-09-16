@@ -27,4 +27,4 @@
     <table schema="" tableName="stock" ></table>
     <table schema="" tableName="stockinfo" ></table>
   </context>
-</generatorConfiguration>
+</generatorConfiguration>   
