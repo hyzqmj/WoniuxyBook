@@ -3,7 +3,7 @@
 <mapper namespace="com.woniuxy.dao.BookMapper">
   <resultMap id="BaseResultMap" type="com.woniuxy.domain.Book">
     <id column="bookid" jdbcType="INTEGER" property="bookid" />
-    <result column="bookame" jdbcType="VARCHAR" property="bookame" />
+    <result column="bookname" jdbcType="VARCHAR" property="bookname" />
     <result column="booktype" jdbcType="VARCHAR" property="booktype" />
     <result column="author" jdbcType="VARCHAR" property="author" />
     <result column="publisher" jdbcType="VARCHAR" property="publisher" />
@@ -69,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    bookid, bookame, booktype, author, publisher, bidprice, pid
+    bookid, bookname, booktype, author, publisher, bidprice, pid
   </sql>
   <select id="selectByExample" parameterType="com.woniuxy.domain.BookExample" resultMap="BaseResultMap">
     select
@@ -102,10 +102,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.woniuxy.domain.Book">
-    insert into book (bookid, bookame, booktype, 
+    insert into book (bookid, bookname, booktype, 
       author, publisher, bidprice, 
       pid)
-    values (#{bookid,jdbcType=INTEGER}, #{bookame,jdbcType=VARCHAR}, #{booktype,jdbcType=VARCHAR}, 
+    values (#{bookid,jdbcType=INTEGER}, #{bookname,jdbcType=VARCHAR}, #{booktype,jdbcType=VARCHAR}, 
       #{author,jdbcType=VARCHAR}, #{publisher,jdbcType=VARCHAR}, #{bidprice,jdbcType=DECIMAL}, 
       #{pid,jdbcType=INTEGER})
   </insert>
@@ -115,8 +115,8 @@
       <if test="bookid != null">
         bookid,
       </if>
-      <if test="bookame != null">
-        bookame,
+      <if test="bookname != null">
+        bookname,
       </if>
       <if test="booktype != null">
         booktype,
@@ -138,8 +138,8 @@
       <if test="bookid != null">
         #{bookid,jdbcType=INTEGER},
       </if>
-      <if test="bookame != null">
-        #{bookame,jdbcType=VARCHAR},
+      <if test="bookname != null">
+        #{bookname,jdbcType=VARCHAR},
       </if>
       <if test="booktype != null">
         #{booktype,jdbcType=VARCHAR},
@@ -170,8 +170,8 @@
       <if test="record.bookid != null">
         bookid = #{record.bookid,jdbcType=INTEGER},
       </if>
-      <if test="record.bookame != null">
-        bookame = #{record.bookame,jdbcType=VARCHAR},
+      <if test="record.bookname != null">
+        bookname = #{record.bookname,jdbcType=VARCHAR},
       </if>
       <if test="record.booktype != null">
         booktype = #{record.booktype,jdbcType=VARCHAR},
@@ -196,7 +196,7 @@
   <update id="updateByExample" parameterType="map">
     update book
     set bookid = #{record.bookid,jdbcType=INTEGER},
-      bookame = #{record.bookame,jdbcType=VARCHAR},
+      bookname = #{record.bookname,jdbcType=VARCHAR},
       booktype = #{record.booktype,jdbcType=VARCHAR},
       author = #{record.author,jdbcType=VARCHAR},
       publisher = #{record.publisher,jdbcType=VARCHAR},
@@ -209,8 +209,8 @@
   <update id="updateByPrimaryKeySelective" parameterType="com.woniuxy.domain.Book">
     update book
     <set>
-      <if test="bookame != null">
-        bookame = #{bookame,jdbcType=VARCHAR},
+      <if test="bookname != null">
+        bookname = #{bookname,jdbcType=VARCHAR},
       </if>
       <if test="booktype != null">
         booktype = #{booktype,jdbcType=VARCHAR},
@@ -232,7 +232,7 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="com.woniuxy.domain.Book">
     update book
-    set bookame = #{bookame,jdbcType=VARCHAR},
+    set bookname = #{bookname,jdbcType=VARCHAR},
       booktype = #{booktype,jdbcType=VARCHAR},
       author = #{author,jdbcType=VARCHAR},
       publisher = #{publisher,jdbcType=VARCHAR},

@@ -165,73 +165,73 @@ public class BookExample {
             return (Criteria) this;
         }
 
-        public Criteria andBookameIsNull() {
-            addCriterion("bookame is null");
+        public Criteria andbooknameIsNull() {
+            addCriterion("bookname is null");
             return (Criteria) this;
         }
 
-        public Criteria andBookameIsNotNull() {
-            addCriterion("bookame is not null");
+        public Criteria andbooknameIsNotNull() {
+            addCriterion("bookname is not null");
             return (Criteria) this;
         }
 
-        public Criteria andBookameEqualTo(String value) {
-            addCriterion("bookame =", value, "bookame");
+        public Criteria andbooknameEqualTo(String value) {
+            addCriterion("bookname =", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameNotEqualTo(String value) {
-            addCriterion("bookame <>", value, "bookame");
+        public Criteria andbooknameNotEqualTo(String value) {
+            addCriterion("bookname <>", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameGreaterThan(String value) {
-            addCriterion("bookame >", value, "bookame");
+        public Criteria andbooknameGreaterThan(String value) {
+            addCriterion("bookname >", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameGreaterThanOrEqualTo(String value) {
-            addCriterion("bookame >=", value, "bookame");
+        public Criteria andbooknameGreaterThanOrEqualTo(String value) {
+            addCriterion("bookname >=", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameLessThan(String value) {
-            addCriterion("bookame <", value, "bookame");
+        public Criteria andbooknameLessThan(String value) {
+            addCriterion("bookname <", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameLessThanOrEqualTo(String value) {
-            addCriterion("bookame <=", value, "bookame");
+        public Criteria andbooknameLessThanOrEqualTo(String value) {
+            addCriterion("bookname <=", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameLike(String value) {
-            addCriterion("bookame like", value, "bookame");
+        public Criteria andbooknameLike(String value) {
+            addCriterion("bookname like", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameNotLike(String value) {
-            addCriterion("bookame not like", value, "bookame");
+        public Criteria andbooknameNotLike(String value) {
+            addCriterion("bookname not like", value, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameIn(List<String> values) {
-            addCriterion("bookame in", values, "bookame");
+        public Criteria andbooknameIn(List<String> values) {
+            addCriterion("bookname in", values, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameNotIn(List<String> values) {
-            addCriterion("bookame not in", values, "bookame");
+        public Criteria andbooknameNotIn(List<String> values) {
+            addCriterion("bookname not in", values, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameBetween(String value1, String value2) {
-            addCriterion("bookame between", value1, value2, "bookame");
+        public Criteria andbooknameBetween(String value1, String value2) {
+            addCriterion("bookname between", value1, value2, "bookname");
             return (Criteria) this;
         }
 
-        public Criteria andBookameNotBetween(String value1, String value2) {
-            addCriterion("bookame not between", value1, value2, "bookame");
+        public Criteria andbooknameNotBetween(String value1, String value2) {
+            addCriterion("bookname not between", value1, value2, "bookname");
             return (Criteria) this;
         }
 
