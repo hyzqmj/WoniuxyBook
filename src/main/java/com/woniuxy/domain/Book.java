@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 public class Book {
     private Integer bookid;
 
-    private String bookame;
+    private String bookname;
 
     private String booktype;
 
@@ -25,12 +25,12 @@ public class Book {
         this.bookid = bookid;
     }
 
-    public String getBookame() {
-        return bookame;
+    public String getbookname() {
+        return bookname;
     }
 
-    public void setBookame(String bookame) {
-        this.bookame = bookame;
+    public void setbookname(String bookname) {
+        this.bookname = bookname;
     }
 
     public String getBooktype() {
